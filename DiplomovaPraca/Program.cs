@@ -52,19 +52,19 @@ namespace DiplomovaPraca
 
             Poly p = p1.Multiply(p2);
             Poly res = p.Multiply(p3);
-            Console.WriteLine(res.GetBase(20));
+            
 
             bool run = true;
 
-            while (run)
-            {
-                Console.WriteLine("Write your Poly -> ");
-                String poly = Console.ReadLine();
-                Console.WriteLine(poly);
-                Console.WriteLine("Do you want to exit? Y/N");
-                if ("y".Equals(Console.ReadLine())) run = false;
+            //while (run)
+            //{
+            //    Console.WriteLine("Write your Poly -> ");
+            //    String poly = Console.ReadLine();
+            //    Console.WriteLine(poly);
+            //    Console.WriteLine("Do you want to exit? Y/N");
+            //    if ("y".Equals(Console.ReadLine())) run = false;
                 
-            }
+            //}
            
 
 
