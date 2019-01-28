@@ -1,0 +1,17 @@
+C:\Data\GitHub\diploma\DpVisual\bin\Debug\DpVisual.exe.config
+C:\Data\GitHub\diploma\DpVisual\bin\Debug\DpVisual.exe
+C:\Data\GitHub\diploma\DpVisual\bin\Debug\DpVisual.pdb
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.csprojResolveAssemblyReference.cache
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\App.g.cs
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual_MarkupCompile.cache
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual_MarkupCompile.lref
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.g.resources
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.Properties.Resources.resources
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.csproj.GenerateResource.Cache
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.csproj.CoreCompileInputs.cache
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.exe
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\DpVisual.pdb
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\Views\MainWindow.g.cs
+C:\Data\GitHub\diploma\DpVisual\obj\Debug\Views\MainWindow.baml
+C:\Data\GitHub\diploma\DpVisual\bin\Debug\GeneratingFunctions.exe
+C:\Data\GitHub\diploma\DpVisual\bin\Debug\GeneratingFunctions.pdb

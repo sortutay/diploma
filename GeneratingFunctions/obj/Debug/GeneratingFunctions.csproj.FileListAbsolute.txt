@@ -1,0 +1,6 @@
+C:\Data\GitHub\diploma\GeneratingFunctions\bin\Debug\GeneratingFunctions.pdb
+C:\Data\GitHub\diploma\GeneratingFunctions\obj\Debug\GeneratingFunctions.csprojResolveAssemblyReference.cache
+C:\Data\GitHub\diploma\GeneratingFunctions\obj\Debug\GeneratingFunctions.csproj.CoreCompileInputs.cache
+C:\Data\GitHub\diploma\GeneratingFunctions\obj\Debug\GeneratingFunctions.pdb
+C:\Data\GitHub\diploma\GeneratingFunctions\bin\Debug\GeneratingFunctions.exe
+C:\Data\GitHub\diploma\GeneratingFunctions\obj\Debug\GeneratingFunctions.exe

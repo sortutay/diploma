@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomovaPraca", "DiplomovaPraca\DiplomovaPraca.csproj", "{4C38953A-B9CD-4500-B928-BC4A66448F00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DpVisual", "DpVisual\DpVisual.csproj", "{3E9ACD8E-A2B2-4784-9B1A-3C77F3D6AC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingFunctions", "GeneratingFunctions\GeneratingFunctions.csproj", "{FFA0B89F-B249-4697-A3C7-D3472C4CEBF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C38953A-B9CD-4500-B928-BC4A66448F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C38953A-B9CD-4500-B928-BC4A66448F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C38953A-B9CD-4500-B928-BC4A66448F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C38953A-B9CD-4500-B928-BC4A66448F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9ACD8E-A2B2-4784-9B1A-3C77F3D6AC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9ACD8E-A2B2-4784-9B1A-3C77F3D6AC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9ACD8E-A2B2-4784-9B1A-3C77F3D6AC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9ACD8E-A2B2-4784-9B1A-3C77F3D6AC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA0B89F-B249-4697-A3C7-D3472C4CEBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA0B89F-B249-4697-A3C7-D3472C4CEBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA0B89F-B249-4697-A3C7-D3472C4CEBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA0B89F-B249-4697-A3C7-D3472C4CEBF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

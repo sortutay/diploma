@@ -1,0 +1,99 @@
+﻿<Window x:Class="DpVisual.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DpVisual"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="750" Width="1000">
+
+    <StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding FirstDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj parameter a v koeficiente pri x: " />
+                    <TextBox Text="{Binding FirstCoefParam, Mode=TwoWay}" />
+                </StackPanel>
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent n: " />
+                    <TextBox Text="{Binding FirstFinalExp, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="FirstGenBtn" Content="Apply" Click="FirstGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding FirstGen}" />
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding SecondDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent m pri x: " />
+                    <TextBox Text="{Binding SecondExpParam, Mode=TwoWay}" />
+                </StackPanel>
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent n: " />
+                    <TextBox Text="{Binding SecondFinalExp, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="SecondGenBtn" Content="Apply" Click="SecondGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding SecondGen}" />
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding ThirdDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent n: " />
+                    <TextBox Text="{Binding ThirdFinalExp, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="ThirdGenBtn" Content="Apply" Click="ThirdGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding ThirdGen}" />
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding FourthDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj parameter a v koeficiente pri x: " />
+                    <TextBox Text="{Binding FourthCoefParam, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="FourthGenBtn" Content="Apply" Click="FourthGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding FourthGen}" />
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding FifthDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent n : " />
+                    <TextBox Text="{Binding FifthFinalExp, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="FifthGenBtn" Content="Apply" Click="FifthGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding FifthGen}" />
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="{Binding SixthDef}" FontWeight="Bold" />
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Margin="5,0,5,0">
+                    <Label Content="Zadaj exponent n : " />
+                    <TextBox Text="{Binding SixthFinalExp, Mode=TwoWay}" />
+                </StackPanel>
+                <Button x:Name="SixthGenBtn" Content="Apply" Click="SixthGenBtn_OnClick" Margin="5,0,5,0" />
+            </StackPanel>
+            <Label Content="{Binding SixthGen}" />
+        </StackPanel>
+    </StackPanel>
+</Window>

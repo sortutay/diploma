@@ -1,7 +1,0 @@
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\bin\Debug\DiplomovaPraca.exe.config
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\bin\Debug\DiplomovaPraca.exe
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\bin\Debug\DiplomovaPraca.pdb
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\obj\Debug\DiplomovaPraca.csprojResolveAssemblyReference.cache
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\obj\Debug\DiplomovaPraca.csproj.CoreCompileInputs.cache
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\obj\Debug\DiplomovaPraca.exe
-C:\Users\Stefan\source\repos\DiplomovaPraca\DiplomovaPraca\obj\Debug\DiplomovaPraca.pdb
