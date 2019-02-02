@@ -18,7 +18,12 @@ namespace GeneratingFunctions.Definition
 
         public override string ToString()
         {
-            return $"(1 - x^(n + 1)) / (1 - x) => (1 + (1 - x^({_finalExponent} + 1)) / (1 - x) : {ArrayOfTermsToString()}";
+            return $"{Definition()} : {ArrayOfTermsToString()}";
+        }
+
+        public override string Definition()
+        {
+            return $"(1 - x^(n + 1)) / (1 - x) => (1 + (1 - x^({_finalExponent} + 1)) / (1 - x)";
         }
     }
 }

@@ -12,6 +12,8 @@ namespace GeneratingFunctions.Definition.Base
 
         protected int FinalTerm;
 
+        public abstract string Definition();
+
         protected void InitFunction()
         {
             ArrayOfTerms = new List<Term>();

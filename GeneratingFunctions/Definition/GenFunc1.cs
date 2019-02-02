@@ -26,7 +26,12 @@ namespace GeneratingFunctions.Definition
 
         public override string ToString()
         {
-            return $"(1 + ax)^n => (1 + {_coefParameter}x)^{_finalExponent}  :  {ArrayOfTermsToString()}";
+            return $"{Definition()} :  {ArrayOfTermsToString()}";
+        }
+
+        public override string Definition()
+        {
+            return $"(1 + ax)^n => (1 + {_coefParameter}x)^{_finalExponent}";
         }
     }
 }

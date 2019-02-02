@@ -21,7 +21,12 @@ namespace GeneratingFunctions.Definition
 
         public override string ToString()
         {
-            return $"(1 + x^m)^n => (1 + x^{_expParameter})^{_finalExponent} : {ArrayOfTermsToString()}";
+            return $"{Definition()} : {ArrayOfTermsToString()}";
+        }
+
+        public override string Definition()
+        {
+            return $"(1 + x^m)^n => (1 + x^{_expParameter})^{_finalExponent}";
         }
     }
 }

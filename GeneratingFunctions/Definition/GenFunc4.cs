@@ -19,7 +19,12 @@ namespace GeneratingFunctions.Definition
 
         public override string ToString()
         {
-            return $"1 / (1 - ax) => 1 / (1 - {_coefParameter}x) : {ArrayOfTermsToString()} ";
+            return $"{Definition()} : {ArrayOfTermsToString()} ";
+        }
+
+        public override string Definition()
+        {
+            return $"1 / (1 - ax) => 1 / (1 - {_coefParameter}x)";
         }
     }
 }
