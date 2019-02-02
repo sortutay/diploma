@@ -1,52 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GeneratingFunctions.Definition.Base;
+using System;
 
 namespace GeneratingFunctions.Definition
 {
-    public class GenFunc4
+    public class GenFunc4 : BaseGeneratingFunction
     {
-        private int _coefParameter;
-
-        private List<Term> _arrayOfTerms;
-        private Func<int, int> coef;
-        private Func<int, int> exp;
-
-        private Term _term;
+        private readonly int _coefParameter;
 
         public GenFunc4(int coefParameter)
         {
             _coefParameter = coefParameter;
-            _arrayOfTerms = new List<Term>();
+            FinalTerm = Common.Settings.DefaultFinalTerm;
 
-            coef = k => (int)Math.Pow(_coefParameter, k);
-            exp = k => k;
-            InitTerms();
+            Coef = k => (int)Math.Pow(_coefParameter, k);
+            Exp = k => k;
+            InitFunction();
         }
 
         public override string ToString()
         {
             return $"1 / (1 - ax) => 1 / (1 - {_coefParameter}x) : {ArrayOfTermsToString()} ";
-        }
-
-        protected string ArrayOfTermsToString()
-        {
-            var result = "";
-            foreach (var term in _arrayOfTerms)
-            {
-                result += $"[{term}] + ";
-            }
-
-            result = result.Substring(0, result.Length - 3) + " + ...";
-
-            return result;
-        }
-
-        private void InitTerms()
-        {
-            for (int i = 0; i <= 10; i++)
-            {
-                _arrayOfTerms.Add(new Term(coef, exp, i));
-            }
         }
     }
 }

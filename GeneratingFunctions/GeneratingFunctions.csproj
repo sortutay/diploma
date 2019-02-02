@@ -43,14 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Definition\BaseGeneratingFunction.cs" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="Definition\Base\BaseGeneratingFunction.cs" />
     <Compile Include="Definition\GenFunc1.cs" />
     <Compile Include="Definition\GenFunc2.cs" />
     <Compile Include="Definition\GenFunc3.cs" />
     <Compile Include="Definition\GenFunc4.cs" />
     <Compile Include="Definition\GenFunc5.cs" />
     <Compile Include="Definition\GenFunc6.cs" />
-    <Compile Include="Definition\Term.cs" />
+    <Compile Include="Definition\Base\Term.cs" />
+    <Compile Include="Helpers\CombinatorialNumber.cs" />
     <Compile Include="Helpers\MathHelper.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Poly.cs" />

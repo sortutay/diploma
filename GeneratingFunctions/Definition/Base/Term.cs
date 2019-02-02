@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace GeneratingFunctions.Definition
+namespace GeneratingFunctions.Definition.Base
 {
     public class Term
     {
-        private Func<int, int> _coeficient;
-        private Func<int, int> _exponent;
-        private int _order;
+        private readonly Func<int, long> _coeficient;
+        private readonly Func<int, long> _exponent;
+        private readonly int _order;
 
-        public Term(Func<int, int> coeficient, Func<int, int> exponent, int order)
+        public Term(Func<int, long> coeficient, Func<int, long> exponent, int order)
         {
             _coeficient = coeficient;
             _exponent = exponent;
@@ -18,12 +18,12 @@ namespace GeneratingFunctions.Definition
 
         public string Node { get; set; }
 
-        public int GetCoef()
+        public long GetCoef()
         {
             return _coeficient(_order);
         }
 
-        public int GetExponent()
+        public long GetExponent()
         {
             return _exponent(_order);
         }

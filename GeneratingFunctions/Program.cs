@@ -1,4 +1,5 @@
 ﻿using GeneratingFunctions.Definition;
+using GeneratingFunctions.Helpers;
 using System;
 
 namespace GeneratingFunctions
@@ -24,6 +25,9 @@ namespace GeneratingFunctions
             Console.WriteLine(fifthGen);
             Console.WriteLine("\n");
             Console.WriteLine(sixthGen);
+
+            var cn = new CombinatorialNumber(10, 2);
+            Console.WriteLine(cn.Eval());
             Console.ReadLine();
         }
     }
