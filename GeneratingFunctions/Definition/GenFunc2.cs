@@ -28,5 +28,13 @@ namespace GeneratingFunctions.Definition
         {
             return $"(1 + x^m)^n => (1 + x^{_expParameter})^{_finalExponent}";
         }
+
+        public override BaseGeneratingFunction EvalSummationOperator()
+        {
+            var resultFunction = new GenFunc2(_finalExponent, _expParameter);
+            resultFunction.Coef = k => SummationOperator(Coef, k);
+            resultFunction.InitFunction();
+            return resultFunction;
+        }
     }
 }

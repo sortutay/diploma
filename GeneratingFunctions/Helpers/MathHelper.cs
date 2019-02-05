@@ -22,5 +22,16 @@ namespace GeneratingFunctions.Helpers
             }
             return Factorial(n) / (Factorial((n - k)) * Factorial(k));
         }
+
+        public static long SummationOperator(Func<int, long> func, int order)
+        {
+            long result = 0;
+            for (var i = order; i >= 0; i--)
+            {
+                result += func(i);
+            }
+
+            return result;
+        }
     }
 }

@@ -29,5 +29,13 @@ namespace GeneratingFunctions.Definition
         {
             return $"1 / (1 - x)^n => 1 / (1 - x)^{_finalParameter}";
         }
+
+        public override BaseGeneratingFunction EvalSummationOperator()
+        {
+            var resultFunction = new GenFunc6(_finalParameter);
+            resultFunction.Coef = k => SummationOperator(Coef, k);
+            resultFunction.InitFunction();
+            return resultFunction;
+        }
     }
 }

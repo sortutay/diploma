@@ -25,5 +25,13 @@ namespace GeneratingFunctions.Definition
         {
             return $"(1 - x^(n + 1)) / (1 - x) => (1 + (1 - x^({_finalExponent} + 1)) / (1 - x)";
         }
+
+        public override BaseGeneratingFunction EvalSummationOperator()
+        {
+            var resultFunction = new GenFunc3(_finalExponent);
+            resultFunction.Coef = k => SummationOperator(Coef, k);
+            resultFunction.InitFunction();
+            return resultFunction;
+        }
     }
 }

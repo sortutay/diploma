@@ -14,6 +14,7 @@ namespace GeneratingFunctions
             var fourthGen = new GenFunc4(1);
             var fifthGen = new GenFunc5(10);
             var sixthGen = new GenFunc6(10);
+
             Console.WriteLine(firstGen);
             Console.WriteLine("\n");
             Console.WriteLine(secondGen);

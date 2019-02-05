@@ -10,9 +10,21 @@ namespace GeneratingFunctions.Definition.Base
         protected Func<int, long> Coef;
         protected Func<int, long> Exp;
 
+        protected Func<Func<int, long>, int, long> SummationOperator = (func, i) =>
+        {
+            long result = 0;
+            for (var k = i; k >= 0; k--)
+            {
+                result += func(k);
+            }
+            return result;
+        };
+
         protected int FinalTerm;
 
         public abstract string Definition();
+
+        public abstract BaseGeneratingFunction EvalSummationOperator();
 
         protected void InitFunction()
         {
@@ -42,6 +54,10 @@ namespace GeneratingFunctions.Definition.Base
             }
 
             return result.Substring(0, result.Length - 3);
+        }
+
+        private void bla()
+        {
         }
 
         private void GenerateOtherTerms(int finalIndex)

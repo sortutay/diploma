@@ -47,5 +47,12 @@ namespace DpVisual.Views
         {
             _viewModel.SixthGen = new GenFunc6(_viewModel.SixthFinalExp);
         }
+
+        private void FirstGenSumOperatorBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            var data = _viewModel.FirstGen.EvalSummationOperator();
+
+            FirstSumOperator.Content = data;
+        }
     }
 }

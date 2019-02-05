@@ -12,6 +12,7 @@
 
         <StackPanel>
             <Label Content="{Binding FirstDef}" FontWeight="Bold" />
+            <Label x:Name="FirstSumOperator" Content="" />
             <StackPanel Orientation="Horizontal">
                 <StackPanel Margin="5,0,5,0">
                     <Label Content="Zadaj parameter a v koeficiente pri x: " />
@@ -23,6 +24,7 @@
                     <TextBox Text="{Binding FirstFinalExp, Mode=TwoWay}" />
                 </StackPanel>
                 <Button x:Name="FirstGenBtn" Content="Apply" Click="FirstGenBtn_OnClick" Margin="5,0,5,0" />
+                <Button x:Name="FirstGenSumOperatorBtn" Content="Apply Summation Op" Click="FirstGenSumOperatorBtn_OnClick" Margin="5,0,5,0" />
             </StackPanel>
             <Label Content="{Binding FirstGen}" />
         </StackPanel>

@@ -9,8 +9,6 @@ namespace GeneratingFunctions.Definition
         private readonly int _coefParameter;
         private readonly int _finalExponent;
 
-        private Term _term;
-
         public GenFunc1(int finalExponent, int coefParameter)
         {
             FinalTerm = finalExponent;
@@ -32,6 +30,14 @@ namespace GeneratingFunctions.Definition
         public override string Definition()
         {
             return $"(1 + ax)^n => (1 + {_coefParameter}x)^{_finalExponent}";
+        }
+
+        public override BaseGeneratingFunction EvalSummationOperator()
+        {
+            var resultFunction = new GenFunc1(_finalExponent, _coefParameter);
+            resultFunction.Coef = k => SummationOperator(Coef, k);
+            resultFunction.InitFunction();
+            return resultFunction;
         }
     }
 }
